@@ -3,9 +3,11 @@
 
 <head>
   <title>plant html file</title>
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -18,27 +20,154 @@
 
 <body>
   <h1>Plants by "Charan Teja"</h1>
-  <div class="container">
-      <div class="row">
-        <div class="col-sm-2">T</div>
-        <div class="col-sm-2">A</div>
-        <div class="col-sm-2">L</div>
-        <div class="col-sm-2">L</div>
-        <div class="col-sm-2">A</div>
-        <div class="col-sm-2">M</div>
+  <br>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="plants.html"> Intresting Plants</a>
+         <button class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="plant ID">
+           <ul class="navbar-nav mr-auto">
+            <li class="nav-link active" ><a href="basic.html"> Basic </a></li>
+            <li class="nav-link active" ><a href="advanced.html"> Advanced </a></li>
+           </ul>
+         </div>
       </div>
-      <div class="row">
-        <div class="col-md">TAXUS</div>
-        <div class="col-md">ABELIA</div>
-        <div class="col-md">LABURNUM</div>
-        <div class="col-md">LAMIUM</div>
-        <div class="col-md">ACACIA</div>
-        <div class="col-md">MACLURA</div>
-      </div>
+    </nav>
   </div>
-<br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">T</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">L</div>
+      <div class="col-sm-2">L</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">M</div>
+    </div>
+    <div class="row">
+      <div class="col-md">TAXUS</div>
+      <div class="col-md">ABELIA</div>
+      <div class="col-md">LABURNUM</div>
+      <div class="col-md">LAMIUM</div>
+      <div class="col-md">ACACIA</div>
+      <div class="col-md">MACLURA</div>
+    </div>
+  </div>
+  <br>
   <h4>Explanation:</h4>
-  <p>Here the <b>col-sm-2</b> is for smaller devices/screens which will span only 2 columns with a width of 576px. Hence we can see the names of the plants in vertical manner.
-  As the screen size is increased the plant names are automatically updated in the horizontal manner. Simply, if the screen size is reduced less than 768px the plant row breaks.</p>
+  <p>Here the <b>col-sm-2</b> is for smaller devices/screens which will span only 2 columns with a width of 576px. Hence
+    we can see the names of the plants in vertical manner. As the screen size is increased the plant names are automatically updated in the horizontal manner. Simply, if the
+    screen size is reduced less than 768px the plant row breaks.</p>
+  <br>
+  <div class="container">
+    <img src="lamium.jpg" height="250px" width="250px" class="img-fluid" alt=" ">
+    <img src="maclura.jpg" height="250px" width="250px" class="img-fluid" alt=" ">
+    <img src="taxus.jpg" height="250px" width="250px" class="img-fluid" alt=" ">
+  </div>
+  <br>
+  <div class="container">
+    <img src="lamium.jpg" height="250px" width="250px" class="img-thumbnail" alt=" ">
+    <img src="maclura.jpg" height="250px" width="250px" class="img-thumbnail" alt=" ">
+    <img src="taxus.jpg" height="250px" width="250px" class="img-thumbnail" alt=" ">
+  </div>
+  <br>
+  <h4>Table:</h4>
+  <table class="table table-dark table-striped">
+    <caption><i>This above table shows the mountains,lakes and plants with letters starting in last name.</i> </caption>
+    <thead>
+      <tr>
+        <th scope="col">LETTER</th>
+        <th>PLANT</th>
+        <th>MOUNTAIN</th>
+        <th>LAKE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr scope="row">
+        <td>T</td>
+        <td>TAXUS</td>
+        <td>Taboche</td>
+        <td>Tahoe</td>
+      </tr>
+      <tr scope="row">
+        <td>A</td>
+        <td>ABELIA</td>
+        <td>Andromeda</td>
+        <td>Athabasca</td>
+      </tr>
+      <tr scope="row">
+        <td>L</td>
+        <td>LABURNUM</td>
+        <td>Lindsey</td>
+        <td>Lacar</td>
+      </tr>
+      <tr scope="row">
+        <td>L</td>
+        <td>LAMIUM</td>
+        <td>Lincoln</td>
+        <td>Ladoga</td>
+      </tr>
+      <tr scope="row">
+        <td>A</td>
+        <td>ACACIA</td>
+        <td>Andrus</td>
+        <td>Atlin</td>
+      </tr>
+      <tr scope="row">
+        <td>M</td>
+        <td>MACLURA</td>
+        <td>Monarch</td>
+        <td>Mafu</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <h4>Button & Button Groups</h4>
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-success">T</button>
+      <button type="button" class="btn btn-success">A</button>
+      <button type="button" class="btn btn-success">L</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Second group">
+      <button type="button" class="btn btn-warning">L</button>
+      <button type="button" class="btn btn-warning">A</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" class="btn btn-danger">M</button>
+    </div>
+  </div>
+  <br>
+  <h4>Dropdown</h4>
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"> Dropdown button</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="basic.html">Basic Page</a>
+      <a class="dropdown-item" href="advanced.html">Advanced Page</a>
+    </div>
+  </div>
+  <br>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Please enter your e-mail address:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter here">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Plant name</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please Enter your plant name">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sign up for newsletter</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
 </body>
+
 </html>
